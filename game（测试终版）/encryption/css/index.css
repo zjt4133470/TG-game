@@ -1,0 +1,872 @@
+/*公共样式*/
+* {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+#M {
+    width: 100%;
+    min-height: 1000px;
+    font-family: " PingFang-SC-Bold", "Open Sans", 'Arial', "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", 'SimSun', 'sans-serif';
+    /*background-color: #f1d3ce;*/
+    background-image: url("../../encryption/image/bg.jpg");
+    position: relative;
+}
+
+/*特殊字体*/
+@font-face {
+    font-family: "Adieresis";
+    src: url("../font/Adieresis (2).ttf");
+}
+
+/*大主题框*/
+#cont_s {
+    position: relative;
+    width: 1180px;
+    margin: 50px auto;
+    height: 700px;
+}
+
+/*清除浮动*/
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.gold {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*鼠标放入放大效果*/
+.img-hover {
+    transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+}
+
+.img-hover:hover {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+#M header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    z-index: 99999;
+    background-color: #000000;
+}
+
+#head {
+    width: 1180px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#head p {
+    margin-left: 30px;
+    color: #ffffff;
+    float: left;
+    margin-top: 13px;
+    font-size: 16px;
+}
+
+#head p:last-child {
+    float: right;
+}
+
+#head p:first-child {
+    margin-left: 0;
+}
+
+#head p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#head p a:hover {
+    color: #347ffe;
+}
+
+#files {
+    margin-top: 2px;
+    width: 45px;
+    height: 45px;
+    float: right;
+    border-radius: 50%;
+    background-image: url("../../encryption/image/dian.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 40px;
+}
+
+#files label {
+    cursor: pointer;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/*主题*/
+#M #cont {
+    border: 4px solid #000000;
+    position: absolute;
+    z-index: 9999;
+    /*left: 50%;*/
+    /*top: 50%;*/
+    margin-top: 50px;
+    /*margin-left: -590px;*/
+    /*background-image: url("../image/backgroundImg/1.jpg") ;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-color: #ffffff;
+    width: 1175px;
+    height: 646px;
+    opacity: .7;
+}
+
+#M #cont h1 {
+    color: #00ff00;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    width: 870px;
+    font-size: 32px;
+    height: 47px;
+    background-image: url("../../encryption/image/ico/kuang.png");
+    background-repeat: no-repeat;
+    background-position: 195px -55px;
+}
+#M #main .pet{
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+#M #main .pet img{
+    width: 150px;
+    height: 150px;
+}
+
+#M #iframe-wrap iframe {
+    position: absolute;
+    margin-top: 50px;
+}
+
+#main {
+    float: left;
+    margin-top: 12px;
+    width: 871px;
+    height: 500px;
+    border: 4px solid #000000;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+}
+#main .main{
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#main .main p{
+    text-align: center;
+    line-height: 500px;
+    font-size: 50px;
+    color: #FFFFFF;
+    width: 100%;
+}
+#main .main .main_1{
+    position: absolute;
+    width: 180px;
+    margin-left: 10px;
+    margin-top: 200px;
+    color: #FFFFFF;
+
+}
+#main .main .main_1 h5{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 1px;
+    color: #FFFFFF;
+}
+#main .main .main_1 p{
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 5px;
+    line-height: 24px;
+    width: 180px;
+    text-indent: 0;
+    text-align: left;
+}
+#main1 {
+    width: 871px;
+    position: absolute;
+    float: left;
+    height: 68px;
+    bottom: 0;
+    background-color: pink;
+}
+
+#main1 audio {
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+/*右侧导航*/
+#main_right {
+    margin-top: -57px;
+    border: 4px solid #000000;
+    width: 300px;
+    float: right;
+    height: 646px;
+    position: relative;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+#swiper1 .swiper-slide {
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    opacity: .4;
+    background-color: #FFFFFF;
+}
+
+#swiper1 .swiper-slide h2 {
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    color: yellow;
+}
+.swiper-slide1 {
+    background-image: url("../../encryption/image/game/2048.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide2 {
+    background-image: url("../../encryption/image/game/tetris.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide3 {
+    background-image: url("../../encryption/image/game/Flappy Bird.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide4 {
+    background-image: url("../../encryption/image/game/wzq.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide5 {
+    background-image: url("../../encryption/image/game/tetris.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide6 {
+    background-image: url("../../encryption/image/game/ssq.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide7 {
+    background-image: url("../../encryption/image/game/pintu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide8 {
+    background-image: url("../../encryption/image/game/guoda.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide9 {
+    background-image: url("../../encryption/image/game/tetris.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide10 {
+    background-image: url("../../encryption/image/game/txz.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide11 {
+    background-image: url("../../encryption/image/game/ddz.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide12 {
+    background-image: url("../../encryption/image/game/tkdz.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide13 {
+    background-image: url("../../encryption/image/game/fjdz.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide14 {
+    background-image: url("../../encryption/image/game/llk.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide15 {
+    background-image: url("../../encryption/image/game/tetris.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-slide16 {
+    background-image: url("../../encryption/image/game/tcs.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.actives {
+    opacity: 1 !important;
+}
+
+.swiper-container {
+    margin-top: 50px;
+    height: 550px;
+}
+
+#main_right .swiper-button-next1 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+    width: 40px;
+    left: 130px;
+    height: 300px;
+    bottom: -130px;
+    background-color: rgba(0, 255, 0, .8);
+    transform: rotate(90deg);
+}
+
+.jian2 {
+    float: left;
+    color: #000000;
+    font-size: 35px;
+    margin-top: 130px !important;
+    transform: rotate(90deg);
+}
+
+.jian1 {
+    float: left;
+    color: #000000;
+    font-size: 35px;
+    margin-top: 130px !important;
+    transform: rotate(270deg);
+}
+
+#main_right .swiper-button-prev1 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 20;
+    width: 40px;
+    left: 130px;
+    height: 300px;
+    top: -130px;
+    background-color: rgba(0, 255, 0, .8);
+    transform: rotate(90deg);
+}
+
+/*商城*/
+#shop {
+    float: left;
+    width: 100%;
+    min-height: 500px;
+}
+
+#shop .money {
+    float: right;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.icon-jia1 {
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+#shop .shop {
+    width: 1180px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-image: url("../../encryption/image/1.png");
+    opacity: .95;
+}
+
+input::-webkit-input-placeholder {
+    color: #999999;
+    font-size: 14px;
+}
+
+#shop .shop h2 {
+    font-size: 25px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#shop #banners,#banners_vip,#pet_div,#prop_div,#equip_div{
+    width: 1080px;
+    float: left;
+    margin-left: 50px;
+}
+
+.icon-icon-lock-01 {
+    color: gold;
+    font-size: 50px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 128px;
+}
+
+#shop #banners div,#banners_vip div,.img_vip_div,#pet_div div,#prop_div div,#equip_div div{
+    overflow: hidden;
+    cursor: pointer;
+    width: 300px;
+    height: 168px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+
+}
+
+#shop #banners .on_file {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    width: 300px;
+    height: 168px;
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+#shop #banners .p1 {
+    font-size: 18px;
+    width: 300px;
+    float: left;
+    color: #347ffe;
+}
+
+#shop #banners .p2 {
+    font-size: 10px;
+    width: 300px;
+    float: left;
+    color: #d60000;
+    margin-top: 10px;
+}
+
+#shop #banners div img ,#banners_vip div img,.vip_img,#pet_div div img,#prop_div div img,#equip_div div img{
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 168px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.grammaticalization {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -moz-filter: blur(4px);
+}
+
+#shop #banners .shadow {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 220px;
+    position: absolute;
+    width: 300px;
+    height: 168px;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+.on_file {
+    position: relative;
+}
+
+.on_file .shadow {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    width: 300px;
+    height: 168px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+
+#shop #banners .validity ,#banners_vip .validity,#pet_div .validity,#prop_div .validity,#equip_div .validity{
+    left: 0;
+    font-size: 16px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .4);
+}
+.validity_s{
+    left: 0;
+    font-size: 30px;
+    width: 300px;
+    top: 60px;
+    position: absolute;
+    text-align: center;
+    color: #d60000;
+}
+
+.image_select {
+    border: 3px solid #347ffe !important;
+}
+
+/*轮播图2*/
+#swiper2 {
+    float: left;
+    margin-top: 145px;
+    margin-left: 20px;
+    width: 750px;
+    height: 500px;
+    position: relative;
+}
+
+#swiper2 .swiper-slide img {
+    width: 750px;
+    height: 500px;
+    cursor: pointer;
+}
+
+#lun2 .div_left {
+    float: left;
+    margin-top: 200px;
+    margin-left: -150px;
+}
+
+#lun2 .div_right {
+    float: right;
+    margin-top: 200px;
+    margin-left: -150px;
+}
+
+#lun2 .div_right img {
+    transform: rotateY(180deg);
+}
+
+#lun2 .slide2 {
+    position: absolute;
+    width: 750px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8);
+    cursor: pointer;
+}
+
+#lun2 .slide2 p {
+    color: #FFFFFF;
+    font-size: 50px;
+    text-align: center;
+    line-height: 500px;
+}
+
+#lun2 .slide2 p span {
+    color: gold;
+}
+
+/*红包*/
+#redPacket {
+    width: 100px;
+    position: fixed;
+    bottom: 250px;
+    left: 0;
+    z-index: 999999;
+}
+
+#redPacket img {
+    margin-left: 15px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    animation: test 1s linear infinite;
+}
+
+#redPacket p {
+    font-size: 12px;
+    color: #000000;
+    text-align: center;
+    width: 100px;
+}
+
+/*炫酷时钟*/
+#coolClock {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    background-image: url("../../encryption/image/Time.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 150px;
+    left: 0;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+/*底部浮动层*/
+#supernatant {
+    position: fixed;
+    width: 38px;
+    height: 116px;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    bottom: 50px;
+    right: 0;
+}
+
+#supernatant ul li {
+    cursor: pointer;
+    list-style: none;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+#supernatant ul li:last-child {
+    border-bottom: 1px solid transparent;
+}
+
+#supernatant ul li img {
+    width: 18px;
+}
+
+#supernatant ul .suggest img {
+    margin-top: 12px;
+}
+
+#supernatant ul .suggest p {
+    display: none;
+    line-height: 18px;
+}
+
+#supernatant ul .suggest p a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#supernatant ul .code2 img {
+    margin-top: 10px;
+}
+
+#supernatant ul .code2 p {
+    font-size: 14px;
+}
+
+#supernatant ul {
+    position: relative;
+}
+
+#supernatant ul .pop_code {
+    display: none;
+    position: absolute;
+    width: 195px;
+    height: 75px;
+    right: 50px;
+    bottom: 24px;
+    border-radius: 2px;
+    background-image: url("../../encryption/image/ico/pop_code.png");
+    background-repeat: no-repeat;
+    z-index: 9999999;
+}
+
+#supernatant ul .pop_code img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#supernatant ul .pop_code div {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#supernatant ul .pop_code div h3 {
+    font-size: 16px;
+    color: #333333;
+}
+
+#supernatant ul .pop_code div p {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #999999;
+}
+
+#supernatant ul .code2 .img2 {
+    display: none;
+}
+
+#supernatant ul .toTop img {
+    margin-top: 14px;
+}
+
+#supernatant ul .toTop p {
+    display: none;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/*底部*/
+#foot {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+}
+
+#foot1 {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+#foot1 p {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#foot_swiper {
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+}
+
+#foot_swiper .swiper-slide {
+    width: 100%;
+    height: 200px;
+}
+
+.foot_img {
+    width: 100%;
+    height: 200px;
+    /*background-image: url("../../encryption/image/longfoot.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*动态的龙旋转*/
+#shuang {
+    animation: rotate 8s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*包箱跳动*/
+@keyframes test {
+    0% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.2, 1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+/*个人中心侧边栏*/
+.personal_p:hover{
+    background-color: #347ffe !important;
+    color: #FFFFFF !important;
+}
+.personal_p_select{
+    background-color: #347ffe !important;
+    color: #FFFFFF !important;
+}
+/*宠物侧边栏*/
+.pet_p:hover{
+    background-color: #347ffe !important;
+    color: #FFFFFF !important;
+}
+.pet_p_select{
+    background-color: #347ffe !important;
+    color: #FFFFFF !important;
+}
+/*蛋被选中*/
+.icon-xuanzhong-copy{
+    width: 16px;
+    height: 17px;
+    color: #d60000;
+    position: absolute;
+    right: 0;
+    margin-top: 83px;
+    z-index: 9;
+}

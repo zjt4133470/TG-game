@@ -1,0 +1,72 @@
+
+*{
+    margin: 0;
+    padding: 1px;
+}
+div {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+div.board {
+    width: 495px;
+    height: 495px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    background-image: url('../image/game/wzq.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div.board div {
+    width: 31px;
+    height: 31px;
+    border: 1px solid #ccc;
+    float: left;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+div.board .person {
+    background-image: url('../image/game/wzq/00.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div.board .machine {
+    background-image: url('../image/game/wzq/01.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div.board .person_star {
+    background-image: url('../image/game/wzq/02.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div.board .machine_star {
+    background-image: url('../image/game/wzq/03.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+input.ipt {
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -100px;
+    cursor: pointer;
+    font-size: 20px;
+    background: #007aff;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    position: absolute;
+    opacity: .9;
+}

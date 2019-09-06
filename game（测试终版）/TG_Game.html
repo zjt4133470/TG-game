@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>涛哥游戏</title>
+    <link rel="stylesheet" type="text/css" href="encryption/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="encryption/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="encryption/css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" type="text/css" href="encryption/css/index.css">
+    <link rel="stylesheet" type="text/css" href="encryption/css/audio.css">
+    <link rel="stylesheet" type="text/css" href="encryption/css/cropper.css">
+    <link href="encryption/image/bitbug_favicon.ico" rel="icon"/>
+</head>
+<body>
+<div id="M">
+    <header>
+        <div id="head">
+            <a href="#"><img src="encryption/image/logo.png" style="float: left;height: 30px;margin-top: 10px;"></a>
+            <p style="font-size: 12px;float: left;margin-top: 8px;">上次登录时间：<span class="firstTime" style="color: #4eb6e5"></span></p>
+            <p style="font-size: 12px;float: left;margin-top: 28px;margin-left: -198px">本次登录时间：<span class="lastTime" style="color:darkgoldenrod"></span></p>
+            <p style="float: right;margin-left: 30px"><a style="cursor: pointer;" class="prop"><i class="iconfont icon-tubiao-" style="color: #FFFFFF;margin-right: 5px" title="个人中心"></i>个人中心</a></p>
+            <p style="float: right;margin-left: 30px"><a style="cursor: pointer;" class="vip"><i class="iconfont icon-VIP" style="color: #FFFFFF;margin-right: 5px" title="我的VIP"></i>我的VIP</a></p>
+            <p style="float: right;margin-left: 30px"><a style="cursor: pointer;" class="bank"><i class="iconfont icon-yinhang" style="color: #FFFFFF;margin-right: 5px" title="我的银行"></i>我的银行</a></p>
+            <p style="float: right;margin-left: 30px"><a href="#shops"><i class="iconfont icon-shangcheng" style="color: #FFFFFF;margin-right: 5px" title="我的商城"></i>我的商城</a></p>
+            <p style="float: right;margin-left: 30px"><a href="#games"><i class="iconfont icon-iconfontyouxihudong" style="color: #FFFFFF;margin-right: 5px" title="我的游戏"></i>我的游戏</a></p>
+            <div id="files">
+                <label for="file" title="更换头像"></label>
+                <input type="file" id="file" style="display: none">
+            </div>
+        </div>
+    </header>
+
+
+    <div id="cont_s">
+        <div id="games" style="padding-top: 50px"></div>
+        <h3 style="color: #ffffff;text-align: center;font-size: 30px">MY GAME</h3>
+        <!--主题-->
+        <div id="cont">
+            <h1>俄罗斯方块</h1>
+            <!--游戏展示区-->
+            <div id="main">
+                <div class="main" style="display: block">
+                    <!--<p>俄罗斯方块(开发中)</p>-->
+                    <div class="pet">
+                        <img src="" title="我的宠物">
+                    </div>
+                </div>
+                <div class="main"><p>Flappy Bird（开发中）</p></div>
+                <div class="main">
+                    <!--<p>五子棋（开发中）</p>-->
+                    <div class="main_1">
+                        <h5>游戏说明：</h5>
+                        <p>1.鼠标操作（棋子落在框内）。</p>
+                        <p>2.玩家持黑棋，电脑持白棋。</p>
+                        <p>3.每次胜利获得50枚金币。</p>
+                    </div>
+                    <div class="pet">
+                        <img src="" title="我的宠物">
+                    </div>
+                    <iframe frameborder="0" scrolling="no" src="encryption/html/wzq.html" width="100%"
+                            height="100%"></iframe>
+
+                </div>
+                <div class="main"><p>寻找徐铮（开发中）</p></div>
+                <div class="main"><p>双色球模拟器（开发中）</p></div>
+                <div class="main"><p>拼图小游戏（开发中）</p></div>
+                <div class="main"><p>锅打灰太狼（开发中）</p></div>
+                <div class="main"><p>辨色小游戏（开发中）</p></div>
+                <div class="main"><p>推箱子（开发中）</p></div>
+                <div class="main"><p>斗地主（开发中）</p></div>
+                <div class="main"><p>坦克大战（开发中）</p></div>
+                <div class="main"><p>飞机大战（开发中）</p></div>
+                <div class="main"><p>连连看（开发中）</p></div>
+                <div class="main"><p>消除小游戏（开发中）</p></div>
+                <div class="main"><p>贪吃蛇（开发中）</p></div>
+                <div class="main"><p>2048小游戏（开发中）</p></div>
+            </div>
+            <!--播放器-->
+            <div id="main1">
+                <div class="audio-box">
+                    <div class="audio-container">
+                        <div class="audio-view">
+                            <div class="audio-cover"></div>
+                            <div class="audio-body">
+                                <h3 class="audio-title">未知歌曲</h3>
+                                <div class="audio-backs">
+                                    <div class="audio-this-time">00:00</div>
+                                    <div class="audio-count-time">00:00</div>
+                                    <div class="audio-setbacks">
+                                        <i class="audio-this-setbacks">
+                                            <span class="audio-backs-btn"></span>
+                                        </i>
+                                        <span class="audio-cache-setbacks">
+							</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="audio-btn">
+                                <div class="audio-select">
+                                    <div action="prev" class="icon-fast-backward"></div>
+                                    <div action="play" data-on="icon-play" data-off="icon-pause"
+                                         class="icon-play"></div>
+                                    <div action="next" class="icon-fast-forward"></div>
+                                    <!--<div action="menu" class="icon-list-alt"></div>-->
+                                    <div action="volume" class="icon-volume-up">
+                                        <div class="audio-set-volume">
+                                            <div class="volume-box">
+                                                <i><span class="audio-backs-btn"></span></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧导航-->
+            <div id="main_right">
+                <div class="swiper-button-next1"><i class="iconfont icon-jiantou jian1"></i></div>
+                <div class="swiper-button-prev1"><i class="iconfont icon-jiantou jian2"></i></div>
+                <div class="swiper-container" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide1 stop-swiping" abc="15"><h2>2048小游戏</h2></div>
+                        <div class="swiper-slide swiper-slide2 stop-swiping actives" abc="0"><h2>俄罗斯方块</h2></div>
+                        <div class="swiper-slide swiper-slide3 stop-swiping " abc="1"><h2>Flappy Bird</h2></div>
+                        <div class="swiper-slide swiper-slide4 stop-swiping " abc="2"><h2>五子棋</h2></div>
+                        <div class="swiper-slide swiper-slide5 stop-swiping " abc="3"><h2>寻找徐铮</h2></div>
+                        <div class="swiper-slide swiper-slide6 stop-swiping " abc="4"><h2>双色球模拟器</h2></div>
+                        <div class="swiper-slide swiper-slide7 stop-swiping " abc="5"><h2>拼图小游戏</h2></div>
+                        <div class="swiper-slide swiper-slide8 stop-swiping " abc="6"><h2>锅打灰太狼</h2></div>
+                        <div class="swiper-slide swiper-slide9 stop-swiping " abc="7"><h2>辨色小游戏</h2></div>
+                        <div class="swiper-slide swiper-slide10 stop-swiping " abc="8"><h2>推箱子</h2></div>
+                        <div class="swiper-slide swiper-slide11 stop-swiping " abc="9"><h2>斗地主</h2></div>
+                        <div class="swiper-slide swiper-slide12 stop-swiping " abc="10"><h2>坦克大战</h2></div>
+                        <div class="swiper-slide swiper-slide13 stop-swiping " abc="11"><h2>飞机大战</h2></div>
+                        <div class="swiper-slide swiper-slide14 stop-swiping " abc="12"><h2>连连看</h2></div>
+                        <div class="swiper-slide swiper-slide15 stop-swiping " abc="13"><h2>消除小游戏</h2></div>
+                        <div class="swiper-slide swiper-slide16 stop-swiping " abc="14"><h2>贪吃蛇</h2></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--背部动态样式-->
+        <div id="iframe-wrap">
+            <iframe id="iframe" src="http://www.17sucai.com/preview/66735/2018-04-23/texiao/demo.html" frameborder="0"
+                    width="1180px" height="650px"></iframe>
+            <!--<iframe id="iframe" src="http://www.17sucai.com/preview/916994/2017-12-08/html5-webgl-galaxy_(1)/index.html" frameborder="0" width="1180px" height="650px"></iframe>-->
+            <!--<iframe id="iframe" src="http://www.17sucai.com/preview/1/2017-11-15/21/demo.html" frameborder="0" width="1180px" height="650px"></iframe>-->
+            <!--<iframe id="iframe" src="http://www.17sucai.com/preview/1/2017-09-29/h/demo.html" frameborder="0" width="1180px" height="650px"></iframe>-->
+            <!--<iframe id="iframe" src="http://www.17sucai.com/preview/1324218/2018-08-07/jz/demo.html" frameborder="0"  width="1180px" height="650px"></iframe>-->
+            <!--<iframe id="iframe" src="http://www.17sucai.com/preview/11/2017-05-19/黑洞/demo.html" frameborder="0" width="1180px" height="650px"></iframe>-->
+        </div>
+    </div>
+    <!--商城-->
+    <div id="shop">
+        <div id="shops" style="margin-bottom: 60px"></div>
+        <h3 style="color: #ffffff;text-align: center;margin-bottom: 50px;font-size: 30px">MY SHOP</h3>
+        <div class="shop">
+
+            <h2>背景皮肤</h2>
+
+            <p class="money"><span>您的<i class="iconfont icon-jinbi1 gold" style="color: gold" title="金币"></i><span
+                    class="gold_key" style="color: gold"></span><i class="iconfont icon-jia1 icon-jia11"
+                                                                   title="兑换金币"></i></span>
+                <span><i class="iconfont icon-jinbi1 gold" style="color: rgba(192,192,192,.75)" title="银币"></i><span
+                        class="key" style="color: rgba(192,192,192,.75)"></span><i class="iconfont icon-jia1 icon-jia12"
+                                                                                   title="兑换银币"></i></span>
+            </p>
+            <div id="banners">
+                <!--建议尺寸1180*650-->
+                <div><img src="encryption/image/backgroundImg/1.jpg" class="img-hover">
+                    <p class="validity">有效期： <span style="color: #d60000;font-size: 16px" id="time">永久免费</span></p>
+                </div>
+                <div><img src="./encryption/image/backgroundImg/2.jpg" class="img-hover">
+                    <p class="validity">有效期： <span style="color: #d60000;font-size: 16px">永久免费</span></p></div>
+                <div><img src="./encryption/image/backgroundImg/3.jpg" class="img-hover">
+                    <p class="validity">有效期： <span style="color: #d60000;font-size: 16px">永久免费</span></p></div>
+                <div><img src="./encryption/image/backgroundImg/4.jpg" class="img-hover grammaticalization">
+                    <p class="shadow"><i class="iconfont icon-icon-lock-01" style="color: rgba(192,192,192,.75)"></i>
+                        <span class="keys" style="color: white;margin-left: -180px">5000</span><i
+                                class="iconfont icon-jinbi1 gold" style="color: silver" title="银币"></i>解锁</p></div>
+                <div><img src="./encryption/image/backgroundImg/5.jpg" class="img-hover grammaticalization">
+                    <p class="shadow"><i class="iconfont icon-icon-lock-01" style="color: rgba(192,192,192,.75)"></i>
+                        <span class="keys" style="color: white;margin-left: -180px">5000</span><i
+                                class="iconfont icon-jinbi1 gold" style="color: silver" title="银币"></i>解锁</p></div>
+                <div><img src="./encryption/image/backgroundImg/6.jpg" class="img-hover grammaticalization">
+                    <p class="shadow"><i class="iconfont icon-icon-lock-01" style="color: rgba(192,192,192,.75)"></i>
+                        <span class="keys" style="color: white;margin-left: -180px">5000</span><i
+                                class="iconfont icon-jinbi1 gold" style="color: silver" title="银币"></i>解锁</p></div>
+                <div><img src="./encryption/image/backgroundImg/7.gif" class="img-hover grammaticalization">
+                    <p class="shadow"><i class="iconfont icon-icon-lock-01" style="color: rgba(192,192,192,.75)"></i>
+                        <span class="keys" style="color: white;margin-left: -180px">10000</span><i
+                                class="iconfont icon-jinbi1 gold" style="color: silver" title="银币"></i>解锁</p></div>
+                <div class="last_img"><img src="./encryption/image/backgroundImg/8.gif"
+                                           class="img-hover grammaticalization">
+                    <p class="shadow"><i class="iconfont icon-icon-lock-01" style="color: rgba(192,192,192,.75)"></i>
+                        <span class="keys" style="color: white;margin-left: -180px">10000</span><i
+                                class="iconfont icon-jinbi1 gold" style="color: silver" title="银币"></i>解锁</p></div>
+                <p class="on_file">
+                    <label for="file_backgroundImg" style="cursor: pointer">
+                        <img src="./encryption/image/file_img.png">
+                        <span class="p1">一经上传无法更改，且注意选中图片</span>
+                        <span class="p2">（注：上传图片大小宽度最好大于800像素）</span>
+                    </label>
+                    <input type="file" id="file_backgroundImg" style="display: none">
+                    <span class="shadow"><i class="iconfont icon-icon-lock-01" style="color: gold"></i><span
+                            style="margin-left: -180px;color: #FFFFFF">3000<i class="iconfont icon-jinbi1 gold"
+                                                                              style="color: gold"
+                                                                              title="金币"></i>解锁</span></span>
+                </p>
+            </div>
+
+            <h2>动态背景</h2>
+            <div id="lun2">
+                <div class="div_left"><img src="./encryption/image/long.png" class="swiper-button-prev2"
+                                           style="cursor: pointer;outline: none"></div>
+                <div class="swiper-container" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1"><img src="./encryption/image/shop/1.jpg"></div>
+                        <div class="swiper-slide slide1">
+                            <div class="slide2" abc="1"><p><span>2000</span><i class="iconfont icon-jinbi1 gold"
+                                                                               style="color: gold;font-size: 50px;"
+                                                                               title="金币"></i>解锁</p></div>
+                            <img src="./encryption/image/shop/2.jpg"></div>
+                        <div class="swiper-slide slide1">
+                            <div class="slide2" abc="2"><p><span>3000</span><i class="iconfont icon-jinbi1 gold"
+                                                                               style="color: gold;font-size: 50px;"
+                                                                               title="金币"></i>解锁</p></div>
+                            <img src="./encryption/image/shop/3.jpg"></div>
+                        <div class="swiper-slide slide1">
+                            <div class="slide2" abc="3"><p><span>3000</span><i class="iconfont icon-jinbi1 gold"
+                                                                               style="color: gold;font-size: 50px;"
+                                                                               title="金币"></i>解锁</p></div>
+                            <img src="./encryption/image/shop/4.jpg"></div>
+                        <div class="swiper-slide slide1">
+                            <div class="slide2" abc="4"><p><span>5555</span><i class="iconfont icon-jinbi1 gold"
+                                                                               style="color: gold;font-size: 50px;"
+                                                                               title="金币"></i>解锁</p></div>
+                            <img src="./encryption/image/shop/5.jpg"></div>
+                        <div class="swiper-slide slide1">
+                            <div class="slide2" abc="5"><p><span>6666</span><i class="iconfont icon-jinbi1 gold"
+                                                                               style="color: gold;font-size: 50px;"
+                                                                               title="金币"></i>解锁</p></div>
+                            <img src="./encryption/image/shop/6.jpg"></div>
+                    </div>
+                </div>
+                <div class="div_right"><img src="./encryption/image/long.png" class="swiper-button-next2"
+                                            style="cursor: pointer;outline: none"></div>
+
+                <h2 style="width: 500px" id="vips">VIP卡区</h2>
+                <div id="banners_vip">
+                    <!--建议尺寸1180*650-->
+                    <div style="background: #000000"><img src="encryption/image/vip/1.png">
+                        <p class="validity">售价：<span style="color: gold;font-size: 16px">2000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #000000"><img src="encryption/image/vip/2.png">
+                        <p class="validity">售价：<span style="color: gold;font-size: 16px">3000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #000000"><img src="encryption/image/vip/3.png">
+                        <p class="validity">售价：<span style="color: gold;font-size: 16px">5555</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #000000"><img src="encryption/image/vip/4.png">
+                        <p class="validity">售价：<span style="color: gold;font-size: 16px">6666</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #000000"><img src="encryption/image/vip/5.png">
+                        <p class="validity">售价：<span style="color: gold;font-size: 16px">8888</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #000000"><img src="encryption/image/longd.gif">
+                        <p class="validity">售价：<span style="color: gold;font-size: 16px">10000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                </div>
+                <!--宠物蛋区-->
+                <h2 style="width: 500px" id="pets">宠物蛋区</h2>
+                <div id="pet_div">
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/cd.png">
+                        <p class="validity"><span style="color: #d60000">麒麟</span>售价：<span style="color: gold;font-size: 16px" class="span1">1000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/2.jpg">
+                        <p class="validity"><span style="color: #d60000">凤凰</span>售价：<span style="color: gold;font-size: 16px" class="span1">2000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/3.jpg">
+                        <p class="validity"><span style="color: #d60000">玄武</span>售价：<span style="color: gold;font-size: 16px" class="span1">4000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/4.jpg">
+                        <p class="validity"><span style="color: #d60000">朱雀</span>售价：<span style="color: gold;font-size: 16px" class="span1">6000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/5.jpg">
+                        <p class="validity"><span style="color: #d60000">白虎</span>售价：<span style="color: gold;font-size: 16px" class="span1">8000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/6.jpg">
+                        <p class="validity"><span style="color: #d60000">青龙</span>售价：<span style="color: gold;font-size: 16px" class="span1">10000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                </div>
+                <!--道具卡区-->
+                <h2 style="width: 500px" id="prop">道具卡区</h2>
+                <div id="prop_div">
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/prop/fhk.png">
+                        <p class="validity_s">孵 化</p>
+                        <p class="validity"><span style="color: #d60000">孵化卡</span>售价：<span style="color: gold;font-size: 16px" class="span1">500</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/prop/fhk.png">
+                        <p class="validity_s">双 倍</p>
+                        <p class="validity"><span style="color: #d60000">双倍金币卡</span>售价：<span style="color: gold;font-size: 16px" class="span1">1000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                </div>
+                <!--宠物装备区-->
+                <h2 style="width: 500px" id="equips">宠物装备</h2>
+                <div id="equip_div">
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/lt.png">
+                        <p class="validity"><span style="color: #d60000">笼头</span>售价：<span style="color: gold;font-size: 16px" class="span1">1000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/ma.png">
+                        <p class="validity"><span style="color: #d60000">马鞍</span>售价：<span style="color: gold;font-size: 16px" class="span1">1000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                    <div style="background: #FFFFFF;border: 2px solid"><img src="encryption/image/pet/tt.png">
+                        <p class="validity"><span style="color: #d60000">马蹄铁</span>售价：<span style="color: gold;font-size: 16px" class="span1">2000</span><i class="iconfont icon-jinbi1 gold" style="color: gold;font-size: 16px;" title="金币"></i></div>
+                </div>
+
+                <div class="clear" style="padding-bottom: 100px"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear" style="margin-bottom: 200px"></div>
+    <!--尾部-->
+    <div id="foot">
+        <!--炫酷时钟-->
+        <div id="coolClock" title="点击获取时间"></div>
+        <div id="foot1">
+            <div class="swiper-container" id="foot_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide stop-swiping">
+                        <iframe frameborder="0" scrolling="no" src="encryption/html/indexfoot.html" width="100%"
+                                height="100%"></iframe>
+                    </div>
+                    <div class="swiper-slide stop-swiping">
+                        <p style="font-size: 50px;color: #FFFFFF">别看了，就是一个正经的底部，不知道写啥好</p>
+                    </div>
+                    <!--<div class="swiper-slide stop-swiping">-->
+                    <!--<div class="foot_img">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部浮动层-->
+    <div id="supernatant">
+        <ul>
+            <li class="suggest"
+                style="background-color: rgb(229, 229, 229); border-bottom: 1px solid rgb(204, 204, 204);"><img
+                    src="./encryption/image/ico/message.png" title="" alt="" style="display: inline;">
+                <p style="display: none;">
+                    <a>反馈建议</a></p></li>
+            <li class="code2"
+                style="background-color: rgb(229, 229, 229); border-bottom: 1px solid rgb(204, 204, 204);">
+                <img src="./encryption/image/ico/QQ.png" title="" alt="" class="img1" style="display: inline;">
+                <p style="display: none;color:#FFFFFF"><a target="_blank"
+                                                          href="http://wpa.qq.com/msgrd?v=3&uin=2305836325&site=qq&menu=yes"
+                                                          style="color: #FFFFFF;font-size: 14px;text-decoration: none">联系客服</a>
+                </p>
+            </li>
+            <li class="toTop"
+                style="background-color: rgb(229, 229, 229); border-bottom: 1px solid rgb(204, 204, 204);"><img
+                    src="./encryption/image/ico/up.png" title="" alt="" style="display: inline;">
+                <p style="display: none;">回到顶部</p>
+            </li>
+        </ul>
+    </div>
+    <!--宝箱-->
+    <div id="redPacket">
+        <img src="./encryption/image/ico/chest.png" title="10--999银币等你来领取" class="img-hover">
+    </div>
+    <div class="clear" style="padding-bottom: 150px"></div>
+</div>
+<script src="encryption/js/jquery-3.3.1.min.js"></script>
+<script src="encryption/js/cropper.js"></script>
+<script src="encryption/js/swiper-4.3.3.min.js"></script>
+<script src="encryption/js/audio.js"></script>
+<script src="encryption/js/index.js"></script>
+<script src="encryption/js/common.js"></script>
+</body>
+</html>
